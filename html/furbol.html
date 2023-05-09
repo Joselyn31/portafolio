@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CALCULAR PUNTOS DE EQUIPO</h1>
+    <script>
+        function saltarLinea(){ /* MANERAS DE DECLARAR FUNCIONES U OTROS*/
+       document.write("<br>");
+   }
+   function imprimir(frase){ /*Dentro de los parentesis son parametros */
+       document.write(frase);
+       saltarLinea();
+   }
+
+   function calcularImc(peso,altura){
+       imc =peso/ (altura*altura)
+       return imc;
+   }
+
+   let victorias= parseInt(prompt("CANTIDAD DE VICTORIAS: "));/*parseInt funciona cuando un numero es retornado como texto y lo pone en numero */
+   let empates= parseInt(prompt("CANTIDAD DE DERROTAS: "));
+
+  let puntosTotal= (victorias*3)+empates;
+
+   imprimir("TOTAL DE PUNTOS DEL EQUIPO ES: "+puntosTotal);
+   if( puntosTotal>28){ /*CONDICIONES*/
+
+   imprimir("EL EQUIPO TA MEJOR");
+   }
+
+   if (puntosTotal<28){
+   imprimir("EL EQUIPO TA PEOR");
+   }
+   if(puntosTotal==28){
+   imprimir("EL EQUIPO TA IGUAL");/*CONDICIONES*/
+   }
+   </script>
+    
+</body>
+</html>
