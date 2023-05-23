@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./challenge.css">
+    <title>Encriptador JS</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="inicio">
+            <img class="logo" src="./img/alura-start.jpg" width="50" >
+           <h1 class="titulo"> Encriptador challenge</h1>
+        </div>
+        <div class="text-centro">
+           
+            <input class="text-input" id="inputext" type="text" placeholder="INGRESA EL TEXTO A ENCRIPTAR">
+        </div>
+
+        <div class="container2">
+            <img src="./img/Muñeco.png" id="img2" alt="30">
+            <h2 id="textDerecha">NINGUN MENSAJE FUE ENCONTRADO</h2>
+            <textarea  id="textDer" name="name" cols="80 " rows="8" placeholder="INGRESA EL TEXTO QUE DESEAS ENCRIPTAR"></textarea>
+            <button type="button" id="copiar"onclick="copy()">COPIAR</button>
+        
+        </div>
+        <div class="botones">
+            <P>Solo minusculas y sin acentos.</P>
+            <button  type="button" id="encriptar" onclick="encriptar()">ENCRIPTAR</button>
+            <button  type="button" id="desencriptar" onclick="desencriptar()">DESENCRIPTAR</button>
+        </div>
+        
+           
+
+    </div>
+    <div class="footer"> 
+        <p id="foter">DISEÑADO POR JOSELYN MARQUEZ</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
